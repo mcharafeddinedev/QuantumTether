@@ -1,6 +1,6 @@
 # Quantum Tether
 
-An infinite 2D side-scrolling grappling hook game built in Unity 6 for the TX Game Jam. Swing through procedurally generated levels in a race against time.
+An infinite 2D side-scrolling grappling hook game built in Unity 6 for the TX Game Jam 2025 (EGaDS). Swing through procedurally generated levels in a race against time.
 
 ## About This Project
 
@@ -9,7 +9,7 @@ Quantum Tether is an infinite runner where players swing between grapple points 
 (This project version is a finalized, revised and upgraded update from my game jam submission)
 
 **Platform**: Unity 6 (Windows)
-**Game Jam**: TX Game Jam 2024  
+**Game Jam**: TX Game Jam 2025 (EGaDS) 
 **Theme**: "Out of Time"  
 **Development Time**: ~48 hours + post-jam refinement
 
