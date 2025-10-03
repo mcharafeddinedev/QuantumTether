@@ -71,13 +71,5 @@ Documentation and setup guides - all the helpful reading material
 When adding new scripts to the Simple folder:
 1. Identify which system category the script belongs to (should be obvious)
 2. Place it in the appropriate folder
-3. Update this README if adding a new category (so other people know what's going on)
+3. Update this README and all other relevant documentation if adding a new category
 
-## Important Notes
-
-- All `.meta` files are automatically managed by Unity (don't worry about these)
-- Scripts maintain their original functionality and references
-- No code changes were required for this reorganization (just moved stuff around)
-- Unity will automatically update all script references (super convenient)
-- Check out `README_System_Architecture.md` for a deep dive into how everything works together
-- These are the working scripts - clean, organized, and ready for packaging
