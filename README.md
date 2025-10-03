@@ -1,4 +1,6 @@
-# Quantum Tether
+# <img width="72" height="72" alt="father_time_icon_72x72" src="https://github.com/user-attachments/assets/c9e5195f-aa2a-43f0-8c84-9a8ba9e36565" /> QUANTUM TETHER <img width="72" height="72" alt="QT_Cursor" src="https://github.com/user-attachments/assets/4941ee64-d8e6-4c59-aaf7-066264b2a257" />
+
+
 
 An infinite 2D side-scrolling grappling hook game built in Unity 6 for the TX Game Jam 2025 (EGaDS). Swing through procedurally generated levels in a race against time.
 
