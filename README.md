@@ -11,6 +11,7 @@ Quantum Tether is an infinite runner where players swing between grapple points 
 **Game Jam**: TX Game Jam 2024  
 **Theme**: "Out of Time"  
 **Development Time**: ~48 hours + post-jam refinement
+
 **Platform**: Unity 6 (Windows)
 
 ## Gameplay Features
