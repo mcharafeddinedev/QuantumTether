@@ -2,7 +2,7 @@
 
 ## What This Document Contains
 
-Post-mortem/analysis for Quantum Thread - I'm documenting what went well, what didn't, and what I learned during the initial development process, and the following succession of small updates before I was satisfied with it. It covers the technical stuff like system architecture and performance optimizations, plus some honest thoughts about what I'd do differently next time. Hopefully this will be useful for future projects or if anyone else wants to understand how this game was built.
+Post-mortem/analysis for Quantum Thread - I'm documenting what went well, what didn't, and what I learned during the initial development process, and the following succession of small updates before I was satisfied with it. It covers the technical stuff like system architecture and performance optimizations, plus some honest thoughts about what I'd do differently next time. Hopefully this will be useful for my future projects or if anyone else wants to understand how this game was built.
 
 **Note**: This analysis covers the finalized version that was cleaned up and refined after the initial 52-hour game jam period.
 
@@ -10,21 +10,20 @@ Post-mortem/analysis for Quantum Thread - I'm documenting what went well, what d
 
 **Game**: Quantum Thread  
 **Platform**: Unity 6  
-**Genre**: Infinite 2D Side-Scrolling Grappling Hook Game  
+**Genre**: Infinite 2D Side-Scrolling 'Grappling Hook' Game  
 **Theme**: "Out of Time"  
 **Diversifiers**: Gamer Bucks, Beyond WASD, Fourth Wall
 **Initial Development**: 52-hour game jam  
-**Post-Jam Refinement**: Additional cleanup, documentation, and optimization  
-**Lines of Code**: ~7,600+ (all in Simple folder)  
+**Post-Jam Refinement**: Additional cleanup, documentation, and optimization--a few new features and updates (~48 hrs)
 
 ---
 
-## What We Built
+## What I Built
 
 Quantum Thread is an infinite runner where players swing between grapple points using Spider-Man style mechanics. The game features:
 
 - **Procedural Level Generation**: Dynamic anchor spawning with patterns and hazards
-- **Roguelike Upgrade System**: Player progression with meaningful choices
+- **Roguelike Upgrade System**: Player progression with impactful choices
 - **Audio Integration**: Music and SFX management
 - **Performance Optimization**: Object culling and efficient spawning
 - **Clean Architecture**: Modular, maintainable, event-driven systems
@@ -36,7 +35,7 @@ Quantum Thread is an infinite runner where players swing between grapple points 
 
 ### 1. **Event System**
 
-**What We Learned**: Loose coupling through events makes systems independent and maintainable.
+**What I Learned**: Loose coupling through events makes systems independent and maintainable.
 
 **Pattern Used**:
 ```csharp
@@ -65,7 +64,7 @@ void OnDestroy()
 
 ### 2. **Singleton Design for Core Systems**
 
-**What We Learned**: Centralized access to core systems prevents null reference issues and provides consistent state.
+**What I Learned**: Centralized access to core systems prevents null reference issues and provides consistent state.
 
 **Pattern Used**:
 ```csharp
@@ -97,7 +96,7 @@ void Awake()
 
 ### 3. **Object Cleanup System**
 
-**What We Learned**: Efficient object destruction prevents memory leaks and maintains performance.
+**What I Learned**: Efficient object destruction prevents memory leaks and maintains performance.
 
 **Pattern Used**:
 ```csharp
@@ -128,7 +127,7 @@ void CullObjectsBehindCamera(float cameraX)
 
 ### 4. **Pattern-Based Procedural Generation**
 
-**What We Learned**: Multiple anchor patterns create varied, engaging gameplay.
+**What I Learned**: Multiple anchor patterns create varied, engaging gameplay.
 
 **Pattern Used**:
 ```csharp
@@ -312,27 +311,7 @@ void SpawnAnchorPattern()
 - **Frame Rate**: Consistent 60fps on target hardware
 - **Memory Usage**: Stable memory usage with culling
 - **Load Times**: Fast scene transitions
-- **Audio Latency**: Low-latency audio feedback
-
----
-
-## Final Assessment
-
-### **Success Criteria Met**
-**Core Gameplay**: Grappling hook mechanics work smoothly  
-**Procedural Generation**: Varied, engaging anchor patterns  
-**Progression System**: Meaningful upgrade choices  
-**Audio Integration**: Complete music and SFX system  
-**Performance**: Stable 60fps with efficient culling  
-**Architecture**: Clean, maintainable, modular design  
-**Documentation**: Guides and tutorials  
-**Polish**: Good UI and user experience  
-
-### **Overall Rating**
-**8.5/10** - A solid, well-architected game with good polish and working systems. The codebase serves as both a working game and a reference implementation for future projects.
-
-### **Recommendation**
-This project demonstrates good game development practices and serves as a solid foundation for future development. The architecture, documentation, and code quality make it suitable for portfolio presentation and continued development.
+- **Audio Latency**: Low-latency audio feedback1
 
 ---
 
@@ -362,4 +341,4 @@ This project demonstrates good game development practices and serves as a solid 
 
 ---
 
-*This post mortem serves as both a project summary and a reference for future development. The codebase, documentation, and lessons learned provide a solid foundation for similar projects.*
+*This post mortem serves as both a project summary and a reference for future development. The codebase, documentation, and lessons learned provide a solid foundation for similar projects or ideas.*
