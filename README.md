@@ -4,14 +4,13 @@ An infinite 2D side-scrolling grappling hook game built in Unity 6 for the TX Ga
 
 ## About This Project
 
-Quantum Tether is an infinite runner where players swing between grapple points using realistic rope physics. The camera scrolls faster over time to increase difficulty, and players collect time crystals to purchase upgrades during the runs. 
+Quantum Tether is an infinite runner where players swing between grapple points using the threads of space-time. The camera scrolls faster over time to increase difficulty, and players collect time crystals to purchase upgrades during the runs. 
 
 (This project version is a finalized, revised and upgraded update from my game jam submission)
 
 **Game Jam**: TX Game Jam 2024  
 **Theme**: "Out of Time"  
 **Development Time**: ~48 hours + post-jam refinement
-
 **Platform**: Unity 6 (Windows)
 
 ## Gameplay Features
