@@ -2,13 +2,13 @@
 
 ## Project Overview
 
-**Quantum Thread** is an infinite 2D side-scrolling grappling hook game built in Unity 6 for the TX Game Jam. The theme was "Out of Time" and features a Spider-Man style grappling hook system where players swing between grapple points. The camera scrolls faster over time to increase difficulty, fitting the "out of time" theme.
+**Quantum Thread** is an infinite 2D side-scrolling grappling hook game built in Unity 6 for the TX Game Jam. The theme was "Out of Time" and the game features a 'Spider-Man City Raid' (old flash game) style grappling hook system where players swing between grapple points. The camera scrolls faster over time to increase difficulty, and the player can upgrade their character as the run progresses.
 
 **Note**: This analysis covers the finalized version that was cleaned up and refined after the initial 52-hour game jam period.
 
 ## Current Project State
 
-The project has been organized into the **Simple** folder, which contains all the working scripts. The old scripts outside Simple were removed since they weren't used in the final game.
+The project has now been organized into the **Simple** folder, which contains all the working scripts. The old scripts outside Simple were removed since they weren't used in the final game.
 
 ## Core Game Systems Architecture
 
@@ -179,7 +179,3 @@ EnhancedGameManager (Central Hub)
 - Modular design allows easy addition of new systems
 - Event system supports new features without tight coupling
 - Component-based architecture enables flexible combinations
-
-## Conclusion
-
-Quantum Thread demonstrates solid game architecture with clean separation of concerns, efficient performance optimization, and good feature implementation. The codebase is well-organized, documented, and ready for further development or as a reference for future projects.
