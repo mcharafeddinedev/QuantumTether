@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b49b88f20a3b4479edb2dc8cd2e4d1, type: 3}
+  m_Name: DefaultUpgradeLibrary
+  m_EditorClassIdentifier: 
+  allUpgrades:
+  - id: quicker_breath
+    displayName: Quicker Breath
+    description: Dash cooldown reduced by 1 second. Your potential grows.
+    icon: {fileID: -6280831331751901238, guid: 83e2e362230c40f40921761d4e7aaab3, type: 3}
+    cost: 1500
+    maxStacks: 3
+    category: 0
+    dashCooldownDelta: -1
+    dashForceDelta: 0
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 1.1
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 0
+    deathDistanceDelta: 0
+  - id: echo_dash
+    displayName: Echo Dash
+    description: (Use L-Shift) Unlock dash WHILE grappling.
+    icon: {fileID: 5681266790448030397, guid: 8df2b1cb5ac2f614b8ad63b2566a0a53, type: 3}
+    cost: 3000
+    maxStacks: 1
+    category: 0
+    dashCooldownDelta: 0
+    dashForceDelta: 0
+    enableDashWhileGrappling: 1
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 1.1
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 0
+    deathDistanceDelta: 0
+  - id: echo_thread
+    displayName: Echo Thread
+    description: (Use RMB) Unlock an invisible secondary grapple.
+    icon: {fileID: 5904011112617807678, guid: 503822462af41f946989d60ad3be3cf7, type: 3}
+    cost: 3500
+    maxStacks: 1
+    category: 1
+    dashCooldownDelta: 0
+    dashForceDelta: 0
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 1
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 1.1
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 0
+    deathDistanceDelta: 0
+  - id: longer_thread
+    displayName: Longer Threads
+    description: 'Grapple ranges increase significantly. '
+    icon: {fileID: 3829198158675500946, guid: 1b9fd0c819cfcf849858acb5bd7c2f69, type: 3}
+    cost: 2000
+    maxStacks: 3
+    category: 1
+    dashCooldownDelta: 0
+    dashForceDelta: 0
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 5
+    secondaryGrappleRangeDelta: 5
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 1.1
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 0
+    deathDistanceDelta: 0
+  - id: stronger_dashes
+    displayName: Stronger Dash
+    description: Dash force increased. Be careful!
+    icon: {fileID: -6019822453143144486, guid: 29fba49127a12a946a4b8380a052ad65, type: 3}
+    cost: 2000
+    maxStacks: 2
+    category: 0
+    dashCooldownDelta: 0
+    dashForceDelta: 2.5
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 1.1
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 1
+    deathDistanceDelta: 2
+  - id: high_score
+    displayName: High Score
+    description: Score rate increased 20%. Each lifetime weighs more.
+    icon: {fileID: 8077236634394163561, guid: 2b5bd59a333cf9540b49e56a67c7b2d3, type: 3}
+    cost: 1200
+    maxStacks: 3
+    category: 2
+    dashCooldownDelta: 0
+    dashForceDelta: 0
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 1.2
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 1.1
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 0
+    deathDistanceDelta: 0
+  - id: richer_echoes
+    displayName: Richer Echoes
+    description: Collectibles worth +500 more points.
+    icon: {fileID: -8303549018191817419, guid: bf9e559166d8ff548a2d8db598fab777, type: 3}
+    cost: 1000
+    maxStacks: 5
+    category: 2
+    dashCooldownDelta: 0
+    dashForceDelta: 0
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 500
+    cameraSpeedMultiplier: 1.1
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 0
+    deathDistanceDelta: 0
+  - id: lingering_light
+    displayName: Lingering Light
+    description: Time flows slower. Camera speed reduced by 25%.
+    icon: {fileID: -985370268866803058, guid: 6856380f4dceb544d9e7721eac40c40f, type: 3}
+    cost: 1600
+    maxStacks: 4
+    category: 3
+    dashCooldownDelta: 0
+    dashForceDelta: 0
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 0.75
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 0
+    deathDistanceDelta: 0
+  - id: calmer_currents
+    displayName: Calmer Currents
+    description: Hazard spawn rate reduced by 15%. Cosmic storms subside.
+    icon: {fileID: 2465119652823097014, guid: 8f947d9313041f742965c8566732c37d, type: 3}
+    cost: 1500
+    maxStacks: 3
+    category: 4
+    dashCooldownDelta: 0
+    dashForceDelta: 0
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 0.95
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0.85
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 0
+    deathDistanceDelta: 0
+  - id: touch_of_grace
+    displayName: Touch of Grace
+    description: Touched by grace. Increases gap for falling behind.
+    icon: {fileID: 2578335507510571428, guid: e35e3428d4547ae48ac7da6e25b8af1e, type: 3}
+    cost: 1000
+    maxStacks: 2
+    category: 5
+    dashCooldownDelta: 0
+    dashForceDelta: 0
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 1.1
+    cameraSizeMultiplier: 1
+    hazardSpawnRateMultiplier: 0
+    anchorClusterSpacingDelta: 0
+    anchorDensityMultiplier: 1
+    collectibleSpawnDistanceDelta: 0
+    gracePeriodDelta: 1
+    deathDistanceDelta: 5
+  - id: astral_gaze
+    displayName: Astral Gaze
+    description: Zoom out! See more of the cosmos.
+    icon: {fileID: -7985317856874190792, guid: 27f66f68b82149742808379afeac60c2, type: 3}
+    cost: 2750
+    maxStacks: 1
+    category: 3
+    dashCooldownDelta: 0
+    dashForceDelta: 0
+    enableDashWhileGrappling: 0
+    primaryGrappleRangeDelta: 0
+    secondaryGrappleRangeDelta: 0
+    enableSecondaryGrapple: 0
+    scoreRateMultiplier: 0
+    collectibleValueDelta: 0
+    cameraSpeedMultiplier: 1.1
+    cameraSizeMultiplier: 1.3
+    hazardSpawnRateMultiplier: 1.1
+    anchorClusterSpacingDelta: 1.1
+    anchorDensityMultiplier: 1.1
+    collectibleSpawnDistanceDelta: 1.1
+    gracePeriodDelta: 0
+    deathDistanceDelta: 0
